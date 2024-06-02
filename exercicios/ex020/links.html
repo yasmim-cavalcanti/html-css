@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        a {
+            color: red;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        /* a:visited serve para mudar o padrão das lestras quando um site for visitado*/
+        a:visited {
+            color: darkred;
+        }
+        /* a:hover o padrão das letras mudam enquanto o mouse estiver em cima do elemento */
+        a:hover {
+           text-decoration: underline;
+           color: black; 
+           font-weight: lighter;
+        }
+        /* a:active o padrão das letras muda se o link estiver sendo utilizado*/
+        a:active {
+            color: rgb(176, 255, 5);
+            font-weight: lighter;
+        }
+
+        a::after {
+            content:'[link]';
+            font-weight: lighter;
+            color: darkgray;
+            font-size: small;
+        }
+
+        
+        
+    </style>
+</head>
+<body>
+    <h1>Personalizando links</h1>
+    <ul>
+        <li><a href="https://github.com/yasmim-cavalcanti" target="_blank" rel="external">GitHub Rep</a></li>
+        <li><a href="https://www.youtube.com/channel/UCqk3CdGN_j8IR9z4uBbVPSg" target="_blank" rel="external">Canal youtube LANA</a></li>
+        <li><a href="https://www.cursoemvideo.com/" target="_blank" rel="external">Site Curso em Video</a></li>
+       
+    </ul>
+</body>
+</html>
