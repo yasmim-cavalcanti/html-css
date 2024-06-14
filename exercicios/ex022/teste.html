@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>teste imagem de fundo</title>
+    <style>
+        /*SHORTHAND BACKGROUND
+            COLOR -> IMAGE -> POSITION -> REPEAT -> size -> ATTACHMENT */
+        body {
+            height: 100vh;
+            background: black url('https://th.bing.com/th/id/R.5bb7fb6fc1a2d6207ef4b7c725a8002f?rik=uFyMcWzsv5uijw&pid=ImgRaw&r=0') center center no-repeat fixed;
+            background-size: cover;
+        }
+
+        div.quadrado {
+            display: inline-block;
+            width: 150px;
+            height: 150px;
+            border: 2px solid whitesmoke;
+            border-radius: 15px;
+            text-align: center;
+            margin-left: 160px;
+            margin-top: 10px;
+        }
+
+        div#q1 {
+            background-color: skyblue;
+        }
+
+        div#q2 {
+            background-image: linear-gradient(to top, skyblue, darkblue);
+            
+        }
+
+        div#q3 {
+            background-image: url('imagens/pattern003.png');
+        }
+
+        div#q4 {
+            background-image: url('https://th.bing.com/th/id/R.5bb7fb6fc1a2d6207ef4b7c725a8002f?rik=uFyMcWzsv5uijw&pid=ImgRaw&r=0');
+            background-size: cover;
+            margin-bottom: 30px;
+        }
+        h1 {
+            background-color: rgba(245, 245, 245, 0.789);
+            width: 80px;
+            border-radius: 15px;
+            margin: 45px 35px;
+        }
+
+        div.texto {
+            background-color: rgb(246, 227, 199);
+            width: 450px;
+            text-align: center;
+            padding: 0px 10px;
+            margin: auto;
+            border: 2px dotted skyblue;
+            border-radius: 15px;
+            box-shadow: 5px 5px 5px whitesmoke;
+
+        }
+
+        .text {
+            text-align: center;
+            color: orange;
+            font: bolder xx-large Georgia, 'Times New Roman', Times, serif;
+            background-color: rgba(0, 221, 255, 0.349);
+            width: 350px;
+            box-shadow: 5px 5px 5px rgba(255, 166, 0, 0.325);
+        }
+        
+        div#nuvem {
+            background-image: url('imagens/nuvem2.png');
+            background-position: center center;
+            width: 500px;
+            height: 500px;
+            background-repeat: no-repeat;
+            background-attachment: scroll;
+            margin: auto;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <div class="quadrado" id="q1">
+            <h1>Q1</h1>
+        </div>
+        <div class="quadrado" id="q2">
+            <h1>Q2</h1>
+        </div>
+        <div class="quadrado" id="q3">
+            <h1>Q3</h1>
+        </div>
+        <div class="quadrado" id="q4">
+            <h1>Q4</h1>
+        </div>
+        
+        <div class="texto">
+            <h1 class="text">Teste Imagem fixa</h1>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Recusandae suscipit amet fugiat, animi illum sapiente, laboriosam ducimus sit autem dolore, asperiores optio iste nobis. Nobis aliquam corrupti sint autem consequatur? Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit ut non facere quisquam ratione aspernatur placeat animi numquam temporibus facilis repudiandae sint, sapiente officia accusantium a exercitationem voluptatem veniam eaque. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi ad veritatis excepturi laudantium aut minus exercitationem suscipit sint voluptates ipsam? Quo magni quos, voluptatum repellat ipsam laboriosam aliquid error fugiat! Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates, eos cumque obcaecati ducimus eaque recusandae, facilis tenetur quidem earum quis temporibus labore aut cupiditate. Eaque rem ducimus debitis unde doloribus. Lorem ipsum dolor, sit amet consectetur adipisicing elit. A ut cum molestias error quisquam? Dolorem tenetur corrupti, sint error neque doloremque fuga in est quo, temporibus aspernatur! Sequi, quibusdam modi. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Labore eveniet unde libero possimus, ut ab recusandae, praesentium eos vel sequi delectus ea commodi. Modi illo quidem quisquam porro ratione minus!. Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam facilis quo asperiores eaque animi, excepturi perspiciatis minima quam a ab officia unde quibusdam quod impedit quidem dolores temporibus voluptatum voluptas? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur, modi nisi perspiciatis dignissimos hic aut cupiditate illo saepe exercitationem? Quod maxime sit at modi nulla saepe corrupti ducimus incidunt temporibus. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Exercitationem distinctio aliquam eligendi maiores esse vero aspernatur aut consequuntur, veniam culpa in tempora perferendis adipisci voluptatibus ex natus, voluptatem, dolorem eaque! Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus qui dolorum dolorem quisquam doloremque hic provident, officia neque ducimus fuga eos assumenda, tenetur voluptatem eaque pariatur inventore, ipsum veritatis in. Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, molestiae? Consequuntur doloribus ut quisquam ipsum dolorem, voluptas amet dolorum obcaecati nulla possimus. Ipsa numquam aliquam beatae laudantium iste enim explicabo. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex corrupti ea tenetur doloremque reiciendis! Ab recusandae et totam quae suscipit sit quibusdam incidunt illum sequi, fugiat dolorum voluptatum perferendis inventore. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis, delectus. Voluptates odit repellat vel accusantium ex. Explicabo, eos dolor, rerum perferendis in labore at et quasi officiis ratione aperiam natus? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iusto, aperiam qui! Cumque ratione quod cupiditate. Iusto soluta nostrum debitis magnam. Fugiat porro consequatur praesentium cumque dolore dolores aperiam obcaecati magnam? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Praesentium adipisci vel perferendis doloremque eius? Dolores voluptate temporibus maiores, at blanditiis iste maxime reiciendis, repudiandae natus harum aliquam perferendis deserunt dolorem?</p>
+        </div>
+        <div id="nuvem">
+            
+                    </div>
+    </main>
+        
+</body>
+</html4
