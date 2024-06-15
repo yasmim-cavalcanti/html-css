@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        
+        table {
+            border-collapse: collapse;
+            height: 500px;
+            width: 400px;
+            
+        }
+
+        td, th {
+            border: 2px solid black;
+        }
+
+        th {
+            background-color: gray;
+            color: white;
+            font-size: 18px;
+        }
+
+        td.cor {
+            background-color: wheat;
+        }
+        #num {
+            text-align: right;
+        }
+        #total {
+            text-align: right;
+            font-weight: bold;
+            background-color: gray;
+            color: white;
+        }
+
+        td {
+            background-color: bisque;
+            padding: 0px 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Uso de tabelas grandes</h1>
+    <!--ANATOMIA DA TABELA GRANDE
+        TABLE
+            THEAD
+            tr, th, td
+                TBODY
+                tr, th, td
+                    TFOOT
+                    tr, th, td
+    -->
+    <table>
+        <thead>
+            <tr>
+                <th>Estado</th>
+                <th>População</th>
+            </tr>
+        </thead>
+            
+        <tbody>
+            <tr>
+                <td class="cor">São Paulo</td>
+                <td class="cor" id="num">44 411 238</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td id="num">20 500 700</td>
+            </tr>
+            <tr>
+                <td class="cor">Rio de Janeiro</td>
+                <td class="cor" id="num">16 000 500</td>
+            </tr>
+            <tr>
+                <td>Bahia</td>
+                <td id="num">14 100 600</td>
+            </tr>
+            <tr>
+                <td class="cor">Paraná</td>
+                <td class="cor" id="num">11 400 300</td>
+            </tr>
+            <tr>
+                <td>Rio Grande do Sul</td>
+                <td id="num">10 800 900</td>
+            </tr>
+            <tr>
+                <td class="cor">Pernambuco</td>
+                <td class="cor" id="num">9 058 931</td>
+            </tr>
+            <tr>
+                <td>Ceará</td>
+                <td id="num">8 794 957</td>
+            </tr>
+            <tr>
+                <td class="cor">Pará</td>
+                <td class="cor" id="num">8 121 025	</td>
+            </tr>
+            <tr>
+                <td>Santa Catarina</td>
+                <td id="num">7 610 361</td>
+            </tr>
+            <tr>
+                <td class="cor">Goiás</td>
+                <td class="cor" id="num">7 056 495	</td>
+            </tr>
+        </tbody>
+
+        <tfoot>
+            <tr>
+                <th>TOTAL</th>
+                <td id="total">0000</td>
+            </tr>
+        </tfoot>
+
+    </table>
+
+
+</body>
+</html>
