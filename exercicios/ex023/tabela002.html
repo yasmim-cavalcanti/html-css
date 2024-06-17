@@ -26,9 +26,7 @@
             font-size: 18px;
         }
 
-        td.cor {
-            background-color: wheat;
-        }
+        
         #num {
             text-align: right;
         }
@@ -40,7 +38,6 @@
         }
 
         td {
-            background-color: bisque;
             padding: 0px 20px;
         }
         caption {
@@ -49,6 +46,17 @@
             background-color: lightgray;
             font-weight: bolder;
             border: 5px solid bisque;
+        }
+
+        /* Para criar efeito zeebrado na tabela, usar tbody > tr:nth-child(2n) (O valor pode variar);
+        :nth-child(odd) (todas as linhas impares);
+        :nth-child(even) (todas as linhas pares) */
+        
+        tbody > tr:nth-child(odd) {
+            background-color: rgb(228, 176, 112);
+        }
+        tbody > tr:nth-child(even) {
+            background-color: bisque;
         }
     </style>
 </head>
@@ -74,48 +82,48 @@
             
         <tbody>
             <tr>
-                <td class="cor">São Paulo</td>
-                <td class="cor" id="num">44 411 238</td>
+                <td >São Paulo</td>
+                <td  id="num">44 411 238</td>
             </tr>
             <tr>
                 <td>Minas Gerais</td>
                 <td id="num">20 500 700</td>
             </tr>
             <tr>
-                <td class="cor">Rio de Janeiro</td>
-                <td class="cor" id="num">16 000 500</td>
+                <td >Rio de Janeiro</td>
+                <td  id="num">16 000 500</td>
             </tr>
             <tr>
                 <td>Bahia</td>
                 <td id="num">14 100 600</td>
             </tr>
             <tr>
-                <td class="cor">Paraná</td>
-                <td class="cor" id="num">11 400 300</td>
+                <td >Paraná</td>
+                <td  id="num">11 400 300</td>
             </tr>
             <tr>
                 <td>Rio Grande do Sul</td>
                 <td id="num">10 800 900</td>
             </tr>
             <tr>
-                <td class="cor">Pernambuco</td>
-                <td class="cor" id="num">9 058 931</td>
+                <td >Pernambuco</td>
+                <td  id="num">9 058 931</td>
             </tr>
             <tr>
                 <td>Ceará</td>
                 <td id="num">8 794 957</td>
             </tr>
             <tr>
-                <td class="cor">Pará</td>
-                <td class="cor" id="num">8 121 025	</td>
+                <td >Pará</td>
+                <td  id="num">8 121 025	</td>
             </tr>
             <tr>
                 <td>Santa Catarina</td>
                 <td id="num">7 610 361</td>
             </tr>
             <tr>
-                <td class="cor">Goiás</td>
-                <td class="cor" id="num">7 056 495	</td>
+                <td >Goiás</td>
+                <td  id="num">7 056 495	</td>
             </tr>
         </tbody>
 
