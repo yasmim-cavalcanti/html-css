@@ -38,19 +38,19 @@
     <table>
         <thead>
             <tr>
-                <td rowspan="2" class="cor">Área</td>
-                <td rowspan="2" class="cor">Disciplinas</td>
-                <td colspan="2" class="cor">Notas</td>
-                <td rowspan="2" class="cor">Média</td>
+                <td rowspan="2" class="cor" scope="col">Área</td>
+                <td rowspan="2" class="cor" scope="col">Disciplinas</td>
+                <td colspan="2" class="cor" scope="colgroup">Notas</td>
+                <td rowspan="2" class="cor" scope="col">Média</td>
             </tr>
             <tr>
-                <td class="cor">Nota 1</td>
-                <td class="cor">Nota 2</td>
+                <td class="cor" scope="col">Nota 1</td>
+                <td class="cor" scope="col">Nota 2</td>
             </tr>
         </thead>
         <tbody>
             <tr>
-                <td rowspan="4">Exatas</td>
+                <td rowspan="4" scope="rowgroup">Exatas</td>
                 <td>Matemática</td>
                 <td>0</td>
                 <td>0</td>
@@ -75,11 +75,11 @@
                 <td>0</td>
             </tr>
             <tr>
-                <td colspan="4" class="cor" style="text-align: left; padding-left: 5px;"> Média de exatas</td>
+                <td colspan="4" class="cor" style="text-align: left; padding-left: 5px;" scope="row"> Média de exatas</td>
                 <td class="cor">0</td>
             </tr>
             <tr>
-                <td rowspan="2">Humanas</td>
+                <td rowspan="2" scope="rowgroup">Humanas</td>
                 <td>História</td>
                 <td>0</td>
                 <td>0</td>
@@ -92,7 +92,7 @@
                 <td>0</td>
             </tr>
             <tr>
-                <td colspan="4" class="cor" class="esquer" style="text-align: left; padding-left: 5px;" >Média de humanas</td>
+                <td colspan="4" class="cor" class="esquer" style="text-align: left; padding-left: 5px;" scope="row">Média de humanas</td>
                 <td class="cor">0</td>
             </tr>
         </tbody>
