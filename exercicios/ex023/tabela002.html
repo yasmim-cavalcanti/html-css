@@ -43,6 +43,13 @@
             background-color: bisque;
             padding: 0px 20px;
         }
+        caption {
+            font-size: 20px;
+            padding-bottom: 5px;
+            background-color: lightgray;
+            font-weight: bolder;
+            border: 5px solid bisque;
+        }
     </style>
 </head>
 <body>
@@ -57,10 +64,11 @@
                     tr, th, td
     -->
     <table>
+        <caption>População dos Estados</caption>
         <thead>
             <tr>
-                <th>Estado</th>
-                <th>População</th>
+                <th scope="col">Estado</th>
+                <th scope="col">População</th>
             </tr>
         </thead>
             
@@ -113,7 +121,7 @@
 
         <tfoot>
             <tr>
-                <th>TOTAL</th>
+                <th scope="row">TOTAL</th>
                 <td id="total">0000</td>
             </tr>
         </tfoot>
