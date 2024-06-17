@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio Mesclagem de Células</title>
+    <style>
+        body {
+            background-color: lightgray;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        h1{
+            text-align: center;
+            width: 100vw;
+        }
+        h1:hover {
+            color: white;
+            background-color: grey;
+        }
+        table{
+            width: 45vw;
+            font-weight: bolder;
+            font-size: 24px;
+            background-color: white;
+            margin: auto;
+            box-shadow: 3px 3px 3px;
+            margin-bottom: 30px;    
+        }
+
+        td {
+            width: 10vw;
+            border: 2px solid black;
+            text-align: center;
+        }
+
+        td:hover {
+            color: white;
+            background-color: grey;
+        }
+
+
+    </style>
+</head>
+<body>
+    <h1>Desafio Mesclagem Células</h1>
+    <table>
+        <tr> <!--PRIMEIRA-->
+            <td>1</td>
+            <td>2</td>
+            <td rowspan="2">3</td>
+            <td>4</td>
+        </tr>
+        <tr> <!--SEGUNDA-->
+            <td>5</td>
+            <td>6</td>
+            <td>7</td>
+        </tr>
+        <tr> <!--TERCEIRA-->
+            <td colspan="3">8</td>
+            <td>9</td>
+        </tr>
+        <tr> <!--QUARTA-->
+            <td rowspan="2">10</td>
+            <td colspan="2">11</td>
+            <td>12</td>
+        </tr>
+        <tr> <!--QUINTA-->
+            <td>13</td>
+            <td>14</td>
+            <td>15</td>
+        </tr>
+    </table>
+
+    <table>
+        <tr> <!--PRIMEIRA-->
+            <td colspan="4">A</td>
+            <td rowspan="4">B</td>
+        </tr>
+        <tr> <!--SEGUNDA-->
+            <td rowspan="4">C</td>
+            <td>D</td>
+            <td>E</td>
+            <td>F</td>
+        </tr> 
+        <tr> <!--TERCEIRA-->
+            <td>G</td>
+            <td>H</td>
+            <td>I</td>
+        </tr>
+        <tr> <!--QUARTA-->
+            <td>J</td>
+            <td>L</td>
+            <td>M</td>
+        </tr>
+        <tr> <!--QUINTA-->
+            <td colspan="4">N</td>
+        </tr>
+    </table>
+</body>
+</html>
